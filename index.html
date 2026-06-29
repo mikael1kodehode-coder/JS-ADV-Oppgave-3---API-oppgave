@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Strixhaven Card Explorer</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="overlay"></div>
+
+      <div class="logo">
+        <h1>Magic The Gathering</h1>
+
+        <p>Card Codex</p>
+      </div>
+    </header>
+
+    <section class="searchPanel">
+      <div class="leftPanel">
+        <h2>Søk etter kort</h2>
+
+        <div class="searchRow">
+          <input id="searchInput" placeholder="Søk etter kort..." />
+
+          <button id="searchBtn">🔍</button>
+        </div>
+      </div>
+
+      <div class="rightPanel">
+        <h2>Filter</h2>
+
+        <div class="filters">
+          <select id="colorFilter">
+            <option value="">Alle farger</option>
+            <option value="w">White</option>
+            <option value="u">Blue</option>
+            <option value="b">Black</option>
+            <option value="r">Red</option>
+            <option value="g">Green</option>
+          </select>
+
+          <select id="rarityFilter">
+            <option value="">Alle rarity</option>
+            <option value="common">Common</option>
+            <option value="uncommon">Uncommon</option>
+            <option value="rare">Rare</option>
+            <option value="mythic">Mythic</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button id="randomBtn">Tilfeldig kort</button>
+
+        <button id="favoriteBtn">Favoritter</button>
+      </div>
+    </section>
+
+    <main>
+      <div class="titleContainer">
+        <h2 class="sectionTitle">Søkeresultater</h2>
+
+        <p id="message"></p>
+      </div>
+
+      <section id="cardContainer"></section>
+    </main>
+
+    <div id="modal" class="hidden">
+      <div id="modalContent"></div>
+    </div>
+  </body>
+</html>
