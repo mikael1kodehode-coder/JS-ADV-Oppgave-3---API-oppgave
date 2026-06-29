@@ -11,7 +11,7 @@ body {
 
   font-family: "Cinzel", Georgia, serif;
 
-  background: #2b1f02;
+  background: #0e0d0b;
 
   color: #eee;
 }
@@ -19,7 +19,7 @@ body {
 /* HEADER */
 
 header {
-  background: #2b1f02;
+  background: #080807;
 
   padding: 35px 20px 60px;
 
@@ -121,7 +121,7 @@ header {
 
   border-radius: 22px;
 
-  background: #3f2d03;
+  background: #0c0c0a;
 
   border: 2px solid #b9963a;
 
@@ -176,7 +176,7 @@ button {
 
   border: 1px solid #b9963a;
 
-  background: #3f2d03;
+  background: #0c0b0a;
 
   color: white;
 
@@ -283,7 +283,7 @@ main {
   width: 300px;
   min-height: 560px;
 
-  background-color: #2b1f02;
+  background-color: #0c0b0a;
 
   display: flex;
   flex-direction: column;
