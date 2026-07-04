@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-
+  width: 100%;
   min-height: 100vh;
 
   font-family: "Cinzel", Georgia, serif;
@@ -20,6 +20,8 @@ body {
 
 header {
   background: #080807;
+
+  width: 100%;
 
   padding: 35px 20px 60px;
 
@@ -436,10 +438,9 @@ main {
   .searchPanel {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
-    margin-top: -30px;
+    width: calc(100% - 20px);
+    margin-top: -30px auto 0;
 
     padding: 16px;
-
-    width: 95%;
   }
 }
