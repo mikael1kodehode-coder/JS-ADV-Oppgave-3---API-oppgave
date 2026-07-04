@@ -199,6 +199,46 @@ button:hover {
   box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
 }
 
+.info {
+  position: relative;
+
+  cursor: help;
+
+  color: #d4af37;
+}
+
+.info::after {
+  content: "Du kan søke etter type(dragon, elf...), spesifike kort, forandre filter for farger og rarity";
+
+  position: absolute;
+
+  top: 130%;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 220px;
+
+  padding: 10px;
+
+  border-radius: 8px;
+
+  background: #101827;
+
+  color: white;
+
+  font-size: 0.8rem;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  transition: 0.2s;
+}
+
+.info:hover::after {
+  opacity: 1;
+}
 /* MAIN */
 
 main {
